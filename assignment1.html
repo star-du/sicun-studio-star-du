@@ -38,6 +38,11 @@
   font-size:1.5em;
   letter-spacing: 4px;
   }
+  img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
   </style>
 </head>
 <body>
@@ -71,7 +76,11 @@
 
 <div class="container-fluid bg-1 text-center" id="brief">
   <h1 style="font-family:Lucida Console">Mobile Internet is always around</h2>
-  <img src="images/Mobile-Internet.png" alt="mobile internet" class="img-responsive" style="display:inline" width="60%">
+  <picture>
+  <source media="(max-width:799px)" srcset="images/Mobile-Internet-m.png">
+  <source media="(min-width:800px)" srcset="images/Mobile-Internet.png">
+  <img src="images/Mobile-Internet.png" alt="mobile internet" style="width:auto">
+  </picture>
   <p style="text-align:left"><blockquote>The mobile Internet refers to browser-based Internet 
   services accessed from <span class="text-danger">handheld mobile</span></mark>
   devices, such as smartphones or feature phones, through a mobile or other wireless network.<br>
